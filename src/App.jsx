@@ -1,9 +1,11 @@
 import React from 'react';
-import HotelLanding from './components/HotelLanding';
+import HotelLandingPage from './HotelLandingPage';
 
 function App() {
   return (
-    <HotelLanding />
+    <div className="w-full min-h-screen">
+      <HotelLandingPage />
+    </div>
   );
 }
 

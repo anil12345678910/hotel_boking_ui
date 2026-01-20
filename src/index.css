@@ -2,15 +2,33 @@
 
 @theme {
   --font-sans: 'Inter', sans-serif;
-  --color-brand-dark: #0f172a;
-  --color-brand-light: #f8fafc;
-  --color-brand-accent: #c0a062;
+  --font-serif: 'Playfair Display', serif;
+
+  --color-brand-black: #1a1a1a;
+  --color-brand-dark: #2c2c2c;
+  --color-brand-gold: #d4af37;
+  --color-brand-gold-light: #f3e5ab;
+  --color-brand-cream: #fbfbfb;
+  --color-brand-gray: #888888;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap');
+
+html {
+  scroll-behavior: smooth;
+}
 
 body {
-  @apply font-sans antialiased text-slate-800 bg-white;
+  @apply font-sans antialiased text-brand-black bg-brand-cream;
+  overflow-x: hidden;
+}
+
+/* Custom Utilities for Lux Vibe */
+.text-gold {
+  color: var(--color-brand-gold);
+}
+
+.bg-gold {
+  background-color: var(--color-brand-gold);
 }
 
 h1,
@@ -19,13 +37,5 @@ h3,
 h4,
 h5,
 h6 {
-  @apply font-sans;
-}
-
-.luxury-font {
-  font-family: 'Playfair Display', serif;
-}
-
-.background_colour_ready {
-  background-color: rgb(129 122 249);
+  @apply font-serif;
 }
